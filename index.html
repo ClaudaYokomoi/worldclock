@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>World Clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Moment.js & Timezone -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data.min.js"></script>
+</head>
+
+<body>
+    <h1>🌍 World Clock</h1>
+
+    <select id="city-select">
+        <option value="">Select a city…</option>
+        <option value="America/Los_Angeles">Los Angeles 🇺🇸</option>
+        <option value="Europe/Paris">Paris 🇫🇷</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+        <option value="Australia/Sydney">Sydney 🇦🇺</option>
+        <option value="current">Your Current Location</option>
+    </select>
+
+    <div class="city-time">
+        <h2 id="city-name">Select a city to see the time</h2>
+        <p id="time-display">The time will appear here when you select a city.</p>
+    </div>
+
+    <footer>
+        This project was coded with ❤️ by Clauda and is
+        <a href="https://github.com/ClaudaYokomoi/world-clock" target="_blank">open-sourced on GitHub</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

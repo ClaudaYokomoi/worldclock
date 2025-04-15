@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e9ecef;
+    padding: 50px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+select {
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+}
+
+.city-time {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.city-time h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0077cc;
+}
+
+.city-time p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
