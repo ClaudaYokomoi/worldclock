@@ -2,36 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Clock</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Moment.js & Timezone -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data.min.js"></script>
 </head>
 
 <body>
-    <h1>🌍 World Clock</h1>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-globe-americas"></i> World Clock</h1>
+            <p class="subtitle">Track time across the globe</p>
+        </header>
 
-    <select id="city-select">
-        <option value="">Select a city…</option>
-        <option value="America/Los_Angeles">Los Angeles 🇺🇸</option>
-        <option value="Europe/Paris">Paris 🇫🇷</option>
-        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
-        <option value="Australia/Sydney">Sydney 🇦🇺</option>
-        <option value="current">Your Current Location</option>
-    </select>
+        <main>
+            <div class="card main-clock">
+                <div class="city-selector">
+                    <select id="city-select" class="styled-select">
+                        <option value="">Select a city...</option>
+                        <option value="America/New_York">New York 🇺🇸</option>
+                        <option value="Europe/London">London 🇬🇧</option>
+                        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+                        <option value="Europe/Paris">Paris 🇫🇷</option>
+                        <option value="Australia/Sydney">Sydney 🇦🇺</option>
+                        <option value="current"><i class="fas fa-location-dot"></i> My Location</option>
+                    </select>
+                </div>
 
-    <div class="city-time">
-        <h2 id="city-name">Select a city to see the time</h2>
-        <p id="time-display">The time will appear here when you select a city.</p>
+                <div class="time-display">
+                    <h2 id="city-name">Select a city</h2>
+                    <div class="time" id="time-display">--:--:--</div>
+                    <div class="date" id="date-display">Day, Month 00, 0000</div>
+                </div>
+            </div>
+
+            <div class="card all-clocks">
+                <h3><i class="fas fa-clock"></i> World Clocks</h3>
+                <div class="clock-grid">
+                    <div class="clock-card new-york">
+                        <div class="city">New York 🇺🇸</div>
+                        <div class="time la-time">--:--:--</div>
+                        <div class="date">Day, Month 00</div>
+                    </div>
+                    <div class="clock-card london">
+                        <div class="city">London 🇬🇧</div>
+                        <div class="time paris-time">--:--:--</div>
+                        <div class="date">Day, Month 00</div>
+                    </div>
+                    <div class="clock-card tokyo">
+                        <div class="city">Tokyo 🇯🇵</div>
+                        <div class="time tokyo-time">--:--:--</div>
+                        <div class="date">Day, Month 00</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created with <i class="fas fa-heart"></i> by <strong>Clauda</strong></p>
+            <a href="https://github.com/claudayokomoi/worldclock" target="_blank" class="github-link">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </footer>
     </div>
-
-    <footer>
-        This project was coded with ❤️ by Clauda and is
-        <a href="https://github.com/ClaudaYokomoi/world-clock" target="_blank">open-sourced on GitHub</a>
-    </footer>
 
     <script src="script.js"></script>
 </body>
